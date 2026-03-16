@@ -30,7 +30,8 @@ main_sites=['STREAM-gauge-2891',
             'STREAM-gauge-2816',
             'STREAM-gauge-3776',
             'STREAM-gauge-3809',
-            'STREAM-gauge-9999'
+            'STREAM-gauge-9999',
+            'STREAM-gauge-9998'
 ]
 
 site_name_dict = []

@@ -55,3 +55,5 @@ for site in main_sites:
     wtsh_AU.append(wtshd_year)
     
 combined_AU = pd.concat(wtsh_AU, ignore_index=True)
+
+combined_AU.to_csv(INPUT_filepath+'00_additional_data/livestock_density/AU_density.csv')
