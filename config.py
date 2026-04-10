@@ -1,9 +1,9 @@
 # Input and Output filepath
 INPUT_filepath = "../INPUT/"
 metadata_filepath = INPUT_filepath+"01_metadata/metadata.csv"
-shapefile_filepath = INPUT_filepath+'03_shapefiles'
+shapefile_filepath = INPUT_filepath+'03_shapefiles/'
 anc_data_filepath = INPUT_filepath+"00_additional_data/"
-OUTPUT_filepath = "../OUTPUT/1_analysis_files_figures/"
+OUTPUT_filepath = "../OUTPUT/"
 
 # SITE IDs
 main_sites=['STREAM-gauge-2891',
@@ -16,22 +16,24 @@ main_sites=['STREAM-gauge-2891',
             'STREAM-gauge-3097',
             'STREAM-gauge-3077',
             'STREAM-gauge-3089',
-            'STREAM-gauge-3100',
+            'STREAM-gauge-3100', #error
             'STREAM-gauge-3108',
             'STREAM-gauge-3109',
-            'STREAM-gauge-308',
+            'STREAM-gauge-308', # not in dataset?
             'STREAM-gauge-2203',
             'STREAM-gauge-4472',
             'STREAM-gauge-4431',
             'STREAM-gauge-4440',
-            'STREAM-gauge-4442',
+            'STREAM-gauge-4442', #error
             'STREAM-gauge-4465',
             'STREAM-gauge-2804',
             'STREAM-gauge-2816',
             'STREAM-gauge-3776',
             'STREAM-gauge-3809',
-            'STREAM-gauge-9999',
-            'STREAM-gauge-9998'
+            'STREAM-gauge-NA1',
+            'STREAM-gauge-NA2',
+            'STREAM-gauge-692',
+            'STREAM-gauge-695'
 ]
 
 site_name_dict = []
