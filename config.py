@@ -1,9 +1,14 @@
 # Input and Output filepath
 INPUT_filepath = "../INPUT/"
+OUTPUT_filepath = "../OUTPUT/"
 metadata_filepath = INPUT_filepath+"01_metadata/metadata.csv"
 shapefile_filepath = INPUT_filepath+'03_shapefiles/'
 anc_data_filepath = INPUT_filepath+"00_additional_data/"
-OUTPUT_filepath = "../OUTPUT/"
+load_filepath = INPUT_filepath+"/02_water_quality_data/load_flex_filled/"
+land_use_filepath = INPUT_filepath+"/07_dynamic_lulc/"
+
+# Data metadata
+start_year = 2008
 
 # SITE IDs
 main_sites=['STREAM-gauge-2891',
@@ -19,7 +24,7 @@ main_sites=['STREAM-gauge-2891',
             'STREAM-gauge-3100', #error
             'STREAM-gauge-3108',
             'STREAM-gauge-3109',
-            'STREAM-gauge-308', # not in dataset?
+            'STREAM-gauge-308',
             'STREAM-gauge-2203',
             'STREAM-gauge-4472',
             'STREAM-gauge-4431',

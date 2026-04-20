@@ -11,13 +11,14 @@ Created on Fri Apr  3 14:33:19 2026
 from pynhd import NLDI
 from config import *
 
-watershed_is_names = {'03216070':'STREAM-gauge-3809.shp'}
+watershed_is_names = {'05484000':'STREAM-gauge-3100.shp'}
 
 nldi = NLDI()
 for gage_id, name in watershed_is_names.items():
+    
 
     # Get basin boundary for a USGS gage
-    basin = nldi.get_basins(gage_id)
+    basin = nldi.get_basins(gage_id, split_catchment=True, simplified=False)
     
     # add source as metadata
     basin["source"] = "NLDI_NHDPlusv2.1"
@@ -29,13 +30,13 @@ for gage_id, name in watershed_is_names.items():
     area_km2 = basin.to_crs("EPSG:5070").area.iloc[0] / 1e6
     print(f"Station ID {gage_id} area: {area_km2:.1f} km^2")
     
-    #flowlines = nldi.navigate_byid(
-    #    fsource="nwissite",
-    #    fid="USGS-06800500",
-    #    navigation="upstreamTributaries",
-    #    source="flowlines",
-    #    distance=9999
-    #)
+    flowlines = nldi.navigate_byid(
+        fsource="nwissite",
+        fid="USGS-06800500",
+        navigation="upstreamTributaries",
+        source="flowlines",
+        distance=9999
+    )
     
     # Save file
     basin.to_file(shapefile_filepath+name)
