@@ -4,8 +4,8 @@ OUTPUT_filepath = "../OUTPUT/"
 metadata_filepath = INPUT_filepath+"01_metadata/metadata.csv"
 shapefile_filepath = INPUT_filepath+'03_shapefiles/'
 anc_data_filepath = INPUT_filepath+"00_additional_data/"
-load_filepath = INPUT_filepath+"/02_water_quality_data/load_flex_filled/"
-land_use_filepath = INPUT_filepath+"/07_dynamic_lulc/"
+load_filepath = INPUT_filepath+"02_water_quality_data/load_flex_filled/"
+land_use_filepath = INPUT_filepath+"07_dynamic_lulc/"
 
 # Data metadata
 start_year = 2008
