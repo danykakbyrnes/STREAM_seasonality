@@ -8,7 +8,7 @@ load_filepath = INPUT_filepath+"02_water_quality_data/"
 land_use_filepath = INPUT_filepath+"07_dynamic_lulc/"
 
 # Data metadata
-START_YEAR = 2008
+START_YEAR = 2015
 
 # SITE IDs
 MAIN_SITES = ['STREAM-gauge-2891',
