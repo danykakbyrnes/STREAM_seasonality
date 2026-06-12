@@ -37,7 +37,7 @@ MAIN_SITES = ['STREAM-gauge-2891',
             'STREAM-gauge-3809',
             'STREAM-gauge-NA1',
             'STREAM-gauge-NA2',
-            'STREAM-gauge-692',
+            #'STREAM-gauge-692', Platte River which has an outlier
             'STREAM-gauge-695'
 ]
 
