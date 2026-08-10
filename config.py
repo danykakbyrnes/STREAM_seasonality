@@ -72,16 +72,3 @@ SHORTHAND_NAMES = {
     'STREAM-gauge-695':  'NE-ER',
     'STREAM-gauge-692':  'NE-PR',
 }
-
-# Animal units. Workbook is found i Inputs > 00_additional_data > livestock_density > AU_animal_workbook.xlsx
-AU = {1047:0.83, # Beef cow
-      2047:0.74, # Milk cow
-      5047:1.26, # Other cattle
-      1051:8.57, # Hogs + pigs
-      1048:455, # Broilers
-      2048:250, # Layers and pullets
-      1050:10, # Goats
-      1053:10, # Sheeps and lambs
-      1055:0.91, # Horses and ponies
-      1054:67, # Turkeys
-      }
