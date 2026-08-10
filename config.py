@@ -43,6 +43,25 @@ MAIN_SITES = ['STREAM-gauge-2891', #ok
             'STREAM-gauge-695', #ok
 ]
 
+basin_chars = [
+    # Wastewater / point sources
+    ('wwtp_yield_m3_d_km2',        'Wastewater Discharge\n(m$^3$ day$^-$$^1$ km$^-$$^2$)'),
+    ('septic_density_km2',          'Septic Density\n(per km$^2$)'),
+    # Agriculture
+    ('AU_density_mean',             'Animal Unit\nDensity (mean)'),
+    ('pct_tile_drained',            'Tile Drainage (%)'),
+    ('irrig_pct_ave',                   'Irrigated (%)'),
+    ('cons_comb_no_conven_till_pct','Cons. or No-Till (%)'),
+    ('cons_cover_crop_pct',         'Cover Crop (%)'),
+    # Soils
+    ('kSat_log10_cmhr',             'log10 kSat (cm hr$^-$$1$)'),
+    ('silt_clay_pct',                    'Silt + clay (%)'),
+    # Climate
+    ('ari_ix_sav',                    'Aridity Index'),
+    # Watershed
+    ('catchmentarea_km2',                    'Watershed Area\n(km$^2$)'),
+]
+
 # Names for stations
 SHORTHAND_NAMES = {
     'STREAM-gauge-2891': 'IL-EM',
@@ -72,7 +91,6 @@ SHORTHAND_NAMES = {
     'STREAM-gauge-4881':  'IN-SD',
     'STREAM-gauge-4882':  'IN-KD',
     'STREAM-gauge-695':  'NE-ER',
-    'STREAM-gauge-692':  'NE-PR',
 }
 
 CROP_ID = {
@@ -191,3 +209,15 @@ CROP_ID = {
 }
 
 
+# Animal units. Workbook is found i Inputs > 00_additional_data > livestock_density > AU_animal_workbook.xlsx
+AU = {1047:0.83, # Beef cow
+      2047:0.74, # Milk cow
+      5047:1.26, # Other cattle
+      1051:8.57, # Hogs + pigs
+      1048:455, # Broilers
+      2048:250, # Layers and pullets
+      1050:10, # Goats
+      1053:10, # Sheeps and lambs
+      1055:0.91, # Horses and ponies
+      1054:67, # Turkeys
+      }
