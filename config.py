@@ -32,7 +32,7 @@ MAIN_SITES = ['STREAM-gauge-2891', #ok
             'STREAM-gauge-4472',#ok
             'STREAM-gauge-4431',#ok
             'STREAM-gauge-4440',#ok
-            'STREAM-gauge-4442', #error
+            'STREAM-gauge-4442', #ok
             'STREAM-gauge-4465', #ok
             'STREAM-gauge-2804',#ok
             'STREAM-gauge-2816', #ok
