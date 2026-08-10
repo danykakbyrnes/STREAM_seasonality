@@ -6,7 +6,7 @@ shapefile_filepath = INPUT_filepath+'03_shapefiles/'
 anc_data_filepath = INPUT_filepath+"00_additional_data/"
 load_filepath = INPUT_filepath+"02_water_quality_data/"
 land_use_filepath = INPUT_filepath+"06_dynamic_lulc/"
-
+anthropogenic_filepath = INPUT_filepath+"07_dynamic_anthropogenic"
 
 # Data metadata
 START_YEAR = 2015
