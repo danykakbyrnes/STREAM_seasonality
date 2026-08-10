@@ -3,6 +3,8 @@ INPUT_filepath = "../INPUT/"
 OUTPUT_filepath = "../OUTPUT/"
 metadata_filepath = INPUT_filepath+"01_metadata/metadata.csv"
 shapefile_filepath = INPUT_filepath+'03_shapefiles/'
+
+static_data = INPUT_filepath+"04_static_catchment_characteristics/"
 anc_data_filepath = INPUT_filepath+"00_additional_data/"
 load_filepath = INPUT_filepath+"02_water_quality_data/"
 land_use_filepath = INPUT_filepath+"06_dynamic_lulc/"
@@ -74,6 +76,7 @@ SHORTHAND_NAMES = {
 }
 
 CROP_ID = {
+    'STREAM_ID': "STREAM_ID",
     'crop_0': 'Background',
     'crop_1': 'Corn',
     'crop_2': 'Cotton',
@@ -126,10 +129,6 @@ CROP_ID = {
     'crop_59': 'Sod_Grass_Seed',
     'crop_60': 'Switchgrass',
     'crop_61': 'Fallow_Idle_Cropland',
-    'crop_62': 'Pasture_Grass',
-    'crop_63': 'Forest',
-    'crop_64': 'Shrubland',
-    'crop_65': 'Barren',
     'crop_66': 'Cherries',
     'crop_67': 'Peaches',
     'crop_68': 'Apples',
@@ -141,26 +140,6 @@ CROP_ID = {
     'crop_75': 'Almonds',
     'crop_76': 'Walnuts',
     'crop_77': 'Pears',
-    'crop_81': 'Clouds_No_Data',
-    'crop_82': 'Developed',
-    'crop_83': 'Water',
-    'crop_87': 'Wetlands',
-    'crop_88': 'Nonag_Undefined',
-    'crop_92': 'Aquaculture',
-    'crop_111': 'Open_Water',
-    'crop_112': 'Perennial_Ice_Snow',
-    'crop_121': 'Developed_Open_Space',
-    'crop_122': 'Developed_Low_Intensity',
-    'crop_123': 'Developed_Med_Intensity',
-    'crop_124': 'Developed_High_Intensity',
-    'crop_131': 'Barren_131',
-    'crop_141': 'Deciduous_Forest',
-    'crop_142': 'Evergreen_Forest',
-    'crop_143': 'Mixed_Forest',
-    'crop_152': 'Shrubland_152',
-    'crop_176': 'Grassland_Pasture',
-    'crop_190': 'Woody_Wetlands',
-    'crop_195': 'Herbaceous_Wetlands',
     'crop_204': 'Pistachios',
     'crop_205': 'Triticale',
     'crop_206': 'Carrots',
@@ -210,3 +189,5 @@ CROP_ID = {
     'crop_250': 'Cranberries',
     'crop_254': 'Dbl_Crop_Barley_Soybeans',
 }
+
+
