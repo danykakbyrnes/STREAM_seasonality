@@ -94,7 +94,8 @@ SHORTHAND_NAMES = {
 }
 
 CROP_ID = {
-    'STREAM_ID': "STREAM_ID",
+    'STREAM_ID': 'STREAM_ID',
+    'year': 'year',
     'crop_0': 'Background',
     'crop_1': 'Corn',
     'crop_2': 'Cotton',
